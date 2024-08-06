@@ -21,11 +21,22 @@ function scrollToTop() {
 scrollToTopBtn.addEventListener('click', scrollToTop);
 document.addEventListener('scroll', handleScroll);
 
-// Load projects from JSON
-fetch('projects.json')
+// Load projects from JSON based on the current page
+const currentPage = window.location.pathname.split('/').pop(); // Gets the current page name
+let jsonFile = 'portfolio.json'; // Default to portfolio.json
+
+if (currentPage === 'freela.html') {
+    jsonFile = 'freela.json';
+}
+else if (currentPage === 'portfolio.html'){
+    jsonFile = 'projects.json';
+}
+
+fetch(jsonFile)
     .then(response => response.json())
     .then(data => {
         const projectsContainer = document.getElementById('projects-container');
+        projectsContainer.innerHTML = ''; // Clear any existing projects
         data.forEach(project => {
             const projectHTML = `
                 <div class="project-container" data-category="${project.category}">
@@ -66,7 +77,7 @@ function filterProjects() {
 filterSelect.addEventListener('change', filterProjects);
 
 // Contact form submission
-document.getElementById('contactForm').addEventListener('submit', function(event) {
+document.getElementById('contactForm')?.addEventListener('submit', function(event) {
     event.preventDefault();
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;

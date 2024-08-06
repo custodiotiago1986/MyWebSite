@@ -1,25 +1,5 @@
 [
     {
-        "title": "Site da Priscila - Frontend",
-        "category": "web",
-        "image": "pri-front.png",
-        "link": "https://github.com/custodiotiago1986/Site_Priscila_Frontend",
-        "badge": "JavaScript",
-        "badgeColor": "badge-JavaScript",
-        "description": "Frontend with JS vanilla",
-        "fullDescription": "Frontend of a website for Teacher Priscila of UFPR."
-    },
-    {
-        "title": "Site da Priscila - Backend",
-        "category": "web",
-        "image": "pri-back.png",
-        "link": "https://github.com/custodiotiago1986/Site_Priscila_Backend",
-        "badge": "JavaScript",
-        "badgeColor": "badge-JavaScript",
-        "description": "Node.js + MongoDB backend",
-        "fullDescription": "Backend of Teacher Priscila website, made with Node.js and Mongodb and hosted in Azure."
-    },
-    {
         "title": "TLC CIV",
         "category": "game",
         "image": "tlc_civ.png",
