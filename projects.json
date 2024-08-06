@@ -1,5 +1,25 @@
 [
     {
+        "title": "Site da Priscila - Frontend",
+        "category": "web",
+        "image": "pri-front.png",
+        "link": "https://github.com/custodiotiago1986/Site_Priscila_Frontend",
+        "badge": "JavaScript",
+        "badgeColor": "badge-JavaScript",
+        "description": "Frontend with JS vanilla",
+        "fullDescription": "Frontend of a website for Teacher Priscila of UFPR."
+    },
+    {
+        "title": "Site da Priscila - Backend",
+        "category": "web",
+        "image": "pri-back.png",
+        "link": "https://github.com/custodiotiago1986/Site_Priscila_Backend",
+        "badge": "JavaScript",
+        "badgeColor": "badge-JavaScript",
+        "description": "Node.js + MongoDB backend",
+        "fullDescription": "Backend of Teacher Priscila website, made with Node.js and Mongodb and hosted in Azure."
+    },
+    {
         "title": "TLC CIV",
         "category": "game",
         "image": "tlc_civ.png",
@@ -58,36 +78,6 @@
         "badgeColor": "badge-JavaScript",
         "description": "Classic spaceship game developed using JavaScript",
         "fullDescription": "This project is a classic-style spaceship game developed using JavaScript. Players can control a spaceship, shoot missiles, and score points by defeating enemies."
-    },
-    {
-        "title": "C++ Server",
-        "category": "server",
-        "image": "project4.png",
-        "link": "https://github.com/custodiotiago1986/SimpleServer",
-        "badge": "C++",
-        "badgeColor": "badge-CPlus",
-        "description": "A simple web server to practice C++",
-        "fullDescription": "This project is a simple web server built using C++. It is designed to help practice and understand the basics of server development with C++."
-    },
-    {
-        "title": "Tic Tac Toe",
-        "category": "game",
-        "image": "tictactoe.png",
-        "link": "https://github.com/custodiotiago1986/TicTacToe",
-        "badge": "C#",
-        "badgeColor": "badge-CSharp",
-        "description": "Classic Tic Tac Toe game with WinForms",
-        "fullDescription": "This project is a classic Tic Tac Toe game developed using C# and WinForms. It includes functionality for playing against the computer and keeping track of scores."
-    },
-    {
-        "title": "Chat App",
-        "category": "app",
-        "image": "project3.png",
-        "link": "https://github.com/custodiotiago1986/ChatApp",
-        "badge": "Go",
-        "badgeColor": "badge-Go",
-        "description": "Built in Go, with Web Sockets and Redis",
-        "fullDescription": "This project is a chat application built using Go. It leverages WebSockets and Redis to provide real-time messaging functionality."
     },
     {
         "title": "Cep Manager",
