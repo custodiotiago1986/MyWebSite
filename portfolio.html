@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Tiago's Dev Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .badge {
+            font-size: 0.8em;
+            margin-left: 5px;
+            padding: 0.4em 0.6em;
+            border-radius: 0.25rem;
+        }
+        .badge-CSharp {
+            background-color: #178600;
+            color: white;
+        }
+        .badge-Python {
+            background-color: #3572A5;
+            color: white;
+        }
+        .badge-JavaScript {
+            background-color: #f1e05a;
+            color: black;
+        }
+        .badge-Go {
+            background-color: #00ADD8;
+            color: white;
+        }
+        .badge-CPlus {
+            background-color: #f34b7d;
+            color: white;
+        }
+        .badge-Java {
+            background-color: #f7a900;
+            color: white;
+        }
+        .project-container {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #dee2e6;
+            border-radius: 0.25rem;
+            background-color: #f8f9fa;
+        }
+        .project-card, .project-description {
+            flex: 1;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .project-card img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px; /* Limite máximo para o tamanho da imagem */
+        }
+        .project-description p {
+            margin: 0;
+        }
+        .showBtn {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="profile.png" alt="Profile" class="rounded-circle" width="40" height="40">
+            Tiago's Dev Portfolio
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <h1>My Projects</h1>
+        <div class="form-group">
+            <label for="filterProjects">Filter Projects:</label>
+            <select class="form-control" id="filterProjects">
+                <option value="all">All</option>
+                <option value="web">Web</option>
+                <option value="game">Game</option>
+                <option value="app">App</option>
+                <option value="server">Server</option>
+                <option value="bot">Bot</option>
+                <option value="messaging">Messaging</option>
+            </select>
+        </div>
+
+        <div id="projects-container"></div>
+    </div>
+
+    <button id="scrollToTopBtn" class="btn btn-primary">Scroll to Top</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
