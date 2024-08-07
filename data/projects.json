@@ -1,0 +1,72 @@
+[
+    {
+        "title": "TLC CIV",
+        "category": "game",
+        "image": "tlc_civ.png",
+        "link": "https://github.com/custodiotiago1986/TLC_CIV",
+        "badge": "C#",
+        "badgeColor": "badge-CSharp",
+        "description": "Civ-style game in development",
+        "fullDescription": "This project is a Civilization-style game developed using C#. The game includes various features and mechanics found in classic Civilization games."
+    },
+    {
+        "title": "C-3PO",
+        "category": "bot",
+        "image": "project6.png",
+        "link": "https://github.com/custodiotiago1986/C-3PO",
+        "badge": "Python",
+        "badgeColor": "badge-Python",
+        "description": "A Discord bot made with Python",
+        "fullDescription": "This project is a Discord bot made with Python. The bot responds to user commands and integrates with the Star Wars API (SWAPI) to provide information about Star Wars characters, planets, and starships."
+    },
+    {
+        "title": "PubSearcher",
+        "category": "web",
+        "image": "project1.png",
+        "link": "https://github.com/custodiotiago1986/PubSearcher",
+        "badge": "JavaScript",
+        "badgeColor": "badge-JavaScript",
+        "description": "Web application for marking pubs on a map",
+        "fullDescription": "This project is a web application built using JavaScript. It allows users to mark and share their favorite pubs on a map, providing a convenient way to discover new places to visit."
+    },
+    {
+        "title": "RabbitMQ with Flask",
+        "category": "messaging",
+        "image": "rabbitmq.png",
+        "link": "https://github.com/custodiotiago1986/Flask_RabbitMQ",
+        "badge": "Python",
+        "badgeColor": "badge-Python",
+        "description": "Demonstrates how to use RabbitMQ with Flask to send and receive messages between two applications",
+        "fullDescription": "This project demonstrates how to use RabbitMQ with Flask to send and receive messages between two applications. It is built using Python and showcases messaging functionality with a simple Flask web application."
+    },
+    {
+        "title": "TLC Vet 2024",
+        "category": "app",
+        "image": "project5.png",
+        "link": "https://github.com/custodiotiago1986/TLCVet2024",
+        "badge": "Python",
+        "badgeColor": "badge-Python",
+        "description": "Veterinary clinic system made with Python and Tkinter",
+        "fullDescription": "This project is a veterinary clinic system developed using Python and Tkinter. It includes features for managing appointments, patient records, and billing."
+    },
+    {
+        "title": "Ship War",
+        "category": "game",
+        "image": "project2.png",
+        "link": "https://github.com/custodiotiago1986/ShipWar",
+        "badge": "JavaScript",
+        "badgeColor": "badge-JavaScript",
+        "description": "Classic spaceship game developed using JavaScript",
+        "fullDescription": "This project is a classic-style spaceship game developed using JavaScript. Players can control a spaceship, shoot missiles, and score points by defeating enemies."
+    },
+    {
+        "title": "Cep Manager",
+        "category": "web",
+        "image": "cepmanager.png",
+        "link": "https://github.com/rogeralbuca/Academia-CX-Projeto-Final/tree/TiagoCustodio",
+        "badge": "Java",
+        "badgeColor": "badge-Java",
+        "description": "Frontend with vanilla JS and a backend with Java (Spring)",
+        "fullDescription": "The project involves two parts: a JavaScript application serving as the frontend where users search for postal codes and send POST requests to save them on the server, and a Spring application serving as the backend. The backend handles these requests to store data in a MySQL database and responds with GET requests to display the saved postal codes on the frontend."
+    }
+]
