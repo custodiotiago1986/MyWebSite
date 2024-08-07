@@ -21,8 +21,12 @@ function scrollToTop() {
 scrollToTopBtn.addEventListener('click', scrollToTop);
 document.addEventListener('scroll', handleScroll);
 
+// Verifica qual página é pra escolher o JSON certo
+var jsonChoiced = 'projects.json';
+console.log(jsonChoiced)
+
 // Load projects from JSON
-fetch('projects.json')
+fetch(jsonChoiced)
     .then(response => response.json())
     .then(data => {
         const projectsContainer = document.getElementById('projects-container');
