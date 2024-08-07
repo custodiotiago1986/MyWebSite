@@ -23,9 +23,9 @@ document.addEventListener('scroll', handleScroll);
 
 
 // Verifica qual página é pra escolher o JSON certo
-if (window.location.href === 'https://devtiago.netlify.app/freela') {
+if (window.location.href === 'https://devtiago.netlify.app/freela' || window.location.href === 'http://127.0.0.1:5500/freela.html') {
     var jsonChoiced = 'freela.json';
-} else if (window.location.href === 'https://devtiago.netlify.app/portfolio') {
+} else if (window.location.href === 'https://devtiago.netlify.app/portfolio' || 'http://127.0.0.1:5500/portfolio.html') {
     var jsonChoiced = 'projects.json';
 }
 
