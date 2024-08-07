@@ -30,8 +30,10 @@ let jsonFile = 'portfolio.json'; // Default to portfolio.json
 
 if (pageParam === 'freela' || currentPage === 'freela.html') {
     jsonFile = 'freela.json';
+    console.log(jsonFile);
 } else if (pageParam === 'portfolio' || currentPage === 'portfolio.html') {
     jsonFile = 'projects.json';
+    console.log(jsonFile);
 }
 
 fetch(jsonFile)
