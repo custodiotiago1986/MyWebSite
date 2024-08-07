@@ -21,26 +21,11 @@ function scrollToTop() {
 scrollToTopBtn.addEventListener('click', scrollToTop);
 document.addEventListener('scroll', handleScroll);
 
-// Load projects from JSON based on the current page
-// Verifica o parâmetro de consulta ou o nome da página para definir o arquivo JSON correto
-const urlParams = new URLSearchParams(window.location.search);
-const pageParam = urlParams.get('page');
-const currentPage = window.location.pathname.split('/').pop(); // Obtém o nome da página atual
-let jsonFile = 'portfolio.json'; // Default to portfolio.json
-
-if (pageParam === 'freela' || currentPage === 'freela.html') {
-    jsonFile = 'freela.json';
-    console.log(jsonFile);
-} else if (pageParam === 'portfolio' || currentPage === 'portfolio.html') {
-    jsonFile = 'projects.json';
-    console.log(jsonFile);
-}
-
-fetch(jsonFile)
+// Load projects from JSON
+fetch('projects.json')
     .then(response => response.json())
     .then(data => {
         const projectsContainer = document.getElementById('projects-container');
-        projectsContainer.innerHTML = ''; // Clear any existing projects
         data.forEach(project => {
             const projectHTML = `
                 <div class="project-container" data-category="${project.category}">
@@ -81,7 +66,7 @@ function filterProjects() {
 filterSelect.addEventListener('change', filterProjects);
 
 // Contact form submission
-document.getElementById('contactForm')?.addEventListener('submit', function(event) {
+document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
