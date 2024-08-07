@@ -22,13 +22,15 @@ scrollToTopBtn.addEventListener('click', scrollToTop);
 document.addEventListener('scroll', handleScroll);
 
 // Load projects from JSON based on the current page
-const currentPage = window.location.pathname.split('/').pop(); // Gets the current page name
+// Verifica o parâmetro de consulta ou o nome da página para definir o arquivo JSON correto
+const urlParams = new URLSearchParams(window.location.search);
+const pageParam = urlParams.get('page');
+const currentPage = window.location.pathname.split('/').pop(); // Obtém o nome da página atual
 let jsonFile = 'portfolio.json'; // Default to portfolio.json
 
-if (currentPage === 'freela.html') {
+if (pageParam === 'freela' || currentPage === 'freela.html') {
     jsonFile = 'freela.json';
-}
-else if (currentPage === 'portfolio.html'){
+} else if (pageParam === 'portfolio' || currentPage === 'portfolio.html') {
     jsonFile = 'projects.json';
 }
 
