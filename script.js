@@ -21,8 +21,14 @@ function scrollToTop() {
 scrollToTopBtn.addEventListener('click', scrollToTop);
 document.addEventListener('scroll', handleScroll);
 
+
 // Verifica qual página é pra escolher o JSON certo
-var jsonChoiced = 'projects.json';
+if (window.location.href === 'https://devtiago.netlify.app/freela') {
+    var jsonChoiced = 'freela.json';
+} else if (window.location.href === 'https://devtiago.netlify.app/portfolio') {
+    var jsonChoiced = 'projects.json';
+}
+
 console.log(jsonChoiced)
 
 // Load projects from JSON
