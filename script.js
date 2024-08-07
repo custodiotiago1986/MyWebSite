@@ -26,13 +26,13 @@ document.addEventListener('scroll', handleScroll);
 const urlParams = new URLSearchParams(window.location.search);
 const pageParam = urlParams.get('page');
 const currentPage = window.location.pathname.split('/').pop(); // Obtém o nome da página atual
-let jsonFile = 'data/portfolio.json'; // Default to portfolio.json
+let jsonFile = 'portfolio.json'; // Default to portfolio.json
 
 if (pageParam === 'freela' || currentPage === 'freela.html') {
-    jsonFile = 'data/freela.json';
+    jsonFile = 'freela.json';
     console.log(jsonFile);
 } else if (pageParam === 'portfolio' || currentPage === 'portfolio.html') {
-    jsonFile = 'data/projects.json';
+    jsonFile = 'projects.json';
     console.log(jsonFile);
 }
 
